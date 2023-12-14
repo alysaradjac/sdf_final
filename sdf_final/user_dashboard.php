@@ -35,10 +35,10 @@ $result = mysqli_query($conn, $sql);
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <form class="d-flex ms-auto">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <form class="d-flex ms-auto" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
+   		<input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
+   		<button class="btn btn-outline-success" type="submit">Search</button>
+	</form>
 		<a class="nav-link ms-2" href="profile.php">Profile</a>
         <a class="nav-link ms-2" href="logout.php">Log Out</a>
       </div>
